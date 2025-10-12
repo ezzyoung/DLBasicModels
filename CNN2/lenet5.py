@@ -123,7 +123,7 @@ class LeNet(nn.Module):
         out = self.cnn2(out) 
         out = self.relu2(out) 
         out = self.maxpool2(out) 
-        out = out.view(out.size(0), -1) 
+        out = out.view(out.size(0), -1) #(batch_size, channels, height, width) 4차원 중 배치 사이즈는 그대로 두고, -1 은 1차원화 flatten 과정
         out = self.fc1(out) 
         out = self.fc2(out)                    
         out = self.output(out)
