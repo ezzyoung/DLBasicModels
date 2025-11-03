@@ -1,5 +1,6 @@
 """
 [AlexNet vs VGGNet 한눈 비교]
+
 1) 커널 크기
    - AlexNet: 초반에 큰 커널(11x11 stride 4, 5x5 등) 사용.
    - VGGNet : 일관적으로 작은 커널(3x3, stride=1, padding=1)만 여러 번 쌓음.
